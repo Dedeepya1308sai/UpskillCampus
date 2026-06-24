@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>User Login | Foodie Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">Foodie Hub</a>
+    <nav class="navlinks" aria-label="Primary">
+      <a href="index.html">Restaurants</a>
+      <a href="orders.html">Orders</a>
+      <a href="cart.html">Cart <span data-cart-count>0</span></a>
+      <a href="signup.html">User Signup</a>
+    </nav>
+  </header>
+
+  <main class="auth-shell">
+    <section class="auth-panel">
+      <div>
+        <p class="eyebrow">Customer access</p>
+        <h1>Log in to order food</h1>
+        <p class="body-copy">Use the demo account or create your own customer profile with addresses, payments, favorite dishes, and order history.</p>
+      </div>
+      <form class="form-card" data-auth-form="user-login">
+        <label>Email<input name="email" type="email" value="customer@foodiehub.test" required></label>
+        <label>Password<input name="password" type="password" value="customer123" required></label>
+        <button type="submit">Login</button>
+        <p class="small-text">New customer? <a href="signup.html">Create a user account</a></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

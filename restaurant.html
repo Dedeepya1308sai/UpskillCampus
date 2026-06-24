@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restaurant Menu | Foodie Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">Foodie Hub</a>
+    <nav class="navlinks" aria-label="Primary">
+      <a href="index.html">Restaurants</a>
+      <a href="orders.html">Orders</a>
+      <a href="cart.html">Cart <span data-cart-count>0</span></a>
+      <a href="login.html">User Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="restaurantHero" class="restaurant-hero"></section>
+    <section class="page-section compact-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Menu and availability</p>
+          <h2>Choose dishes</h2>
+        </div>
+        <a class="text-link" href="cart.html">Go to cart</a>
+      </div>
+      <div class="menu-grid" id="menuGrid"></div>
+    </section>
+    <section class="page-section muted-band">
+      <div class="two-column">
+        <div>
+          <p class="eyebrow">Reviews</p>
+          <h2>Recent customer ratings</h2>
+        </div>
+        <div id="reviewList" class="review-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

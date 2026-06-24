@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restaurant Page | Foodie Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">Foodie Hub</a>
+    <nav class="navlinks" aria-label="Primary">
+      <a href="restaurant-dashboard.html">Restaurant Page</a>
+      <a href="restaurant-login.html">Restaurant Login</a>
+      <a href="restaurant-signup.html">Restaurant Signup</a>
+      <a href="index.html">Customer View</a>
+    </nav>
+  </header>
+
+  <main class="page-section">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Owner dashboard</p>
+        <h1>Orders, menu, and analytics</h1>
+      </div>
+      <button data-add-menu class="secondary-button">Add food item</button>
+    </div>
+    <section class="dashboard-grid">
+      <div>
+        <h2>Incoming orders</h2>
+        <div id="restaurantOrders" class="orders-list"></div>
+      </div>
+      <aside class="dashboard-side">
+        <h2>Menu management</h2>
+        <div id="ownerMenu" class="owner-menu"></div>
+        <h2>Analytics</h2>
+        <div class="insight-grid stacked">
+          <div><strong>Rs 18.4k</strong><span>today sales</span></div>
+          <div><strong>34</strong><span>orders served</span></div>
+          <div><strong>Biryani</strong><span>top dish</span></div>
+          <div><strong>Gachibowli</strong><span>top area</span></div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

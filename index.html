@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Foodie Hub | Nearby Restaurants</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">Foodie Hub</a>
+    <nav class="navlinks" aria-label="Primary">
+      <a href="index.html">Restaurants</a>
+      <a href="orders.html">Orders</a>
+      <a href="cart.html">Cart <span data-cart-count>0</span></a>
+      <a href="login.html">User Login</a>
+      <a href="restaurant-login.html">Restaurant Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero-food">
+      <div class="hero-content">
+        <p class="eyebrow">Live food delivery marketplace</p>
+        <h1>Order from restaurants nearby with live driver ETA.</h1>
+        <p>Browse cuisine, compare ratings, reorder favorites, and track every delivery from kitchen prep to doorstep.</p>
+        <form class="search-row" data-search-form>
+          <input type="search" name="q" placeholder="Search dishes, cuisine, restaurants" aria-label="Search restaurants">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="page-section compact-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Cuisine browsing</p>
+          <h2>Popular near you</h2>
+        </div>
+        <div class="segmented" data-filter-group>
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="Indian">Indian</button>
+          <button data-filter="Italian">Italian</button>
+          <button data-filter="Asian">Asian</button>
+          <button data-filter="Healthy">Healthy</button>
+        </div>
+      </div>
+      <div class="restaurant-grid" id="restaurantGrid"></div>
+    </section>
+
+    <section class="page-section muted-band">
+      <div class="two-column">
+        <div>
+          <p class="eyebrow">Personalized recommendations</p>
+          <h2>Built for repeat customers</h2>
+          <p class="body-copy">The prototype includes favorites, recent orders, loyalty points, saved delivery addresses, saved payment methods, dish photos, reviews, online payment, cash on delivery, and a single cart/payment page shared across the full customer experience.</p>
+        </div>
+        <div class="insight-grid">
+          <div><strong>18 min</strong><span>average ETA</span></div>
+          <div><strong>4.7</strong><span>average rating</span></div>
+          <div><strong>92%</strong><span>repeat order rate</span></div>
+          <div><strong>24/7</strong><span>status updates</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

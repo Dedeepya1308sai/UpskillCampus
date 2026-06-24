@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restaurant Login | Foodie Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">Foodie Hub</a>
+    <nav class="navlinks" aria-label="Primary">
+      <a href="index.html">Restaurants</a>
+      <a href="restaurant-dashboard.html">Restaurant Page</a>
+      <a href="restaurant-signup.html">Restaurant Signup</a>
+    </nav>
+  </header>
+
+  <main class="auth-shell restaurant-auth">
+    <section class="auth-panel">
+      <div>
+        <p class="eyebrow">Restaurant owner access</p>
+        <h1>Manage menus, orders, and delivery</h1>
+        <p class="body-copy">Accept orders, set prep time, assign a driver, adjust menu availability, update pricing, and review analytics.</p>
+      </div>
+      <form class="form-card" data-auth-form="restaurant-login">
+        <label>Email<input name="email" type="email" value="owner@foodiehub.test" required></label>
+        <label>Password<input name="password" type="password" value="restaurant123" required></label>
+        <button type="submit">Login as restaurant</button>
+        <p class="small-text">New restaurant? <a href="restaurant-signup.html">List your restaurant</a></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

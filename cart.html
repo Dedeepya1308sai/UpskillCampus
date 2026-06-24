@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cart and Payment | Foodie Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">Foodie Hub</a>
+    <nav class="navlinks" aria-label="Primary">
+      <a href="index.html">Restaurants</a>
+      <a href="orders.html">Orders</a>
+      <a href="cart.html">Cart <span data-cart-count>0</span></a>
+      <a href="login.html">User Login</a>
+    </nav>
+  </header>
+
+  <main class="page-section">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Single checkout</p>
+        <h1>Cart and payment</h1>
+      </div>
+      <button class="secondary-button" data-clear-cart>Clear cart</button>
+    </div>
+    <section class="checkout-layout">
+      <div class="cart-list" id="cartList"></div>
+      <form class="form-card checkout-card" data-checkout-form>
+        <h2>Delivery and payment</h2>
+        <label>Delivery address<textarea name="address" required>Plot 22, Hitech City, Hyderabad</textarea></label>
+        <label>Phone<input name="phone" type="tel" value="+91 98765 43210" required></label>
+        <div class="radio-row">
+          <label><input type="radio" name="payment" value="Online card" checked> Online card</label>
+          <label><input type="radio" name="payment" value="Cash on delivery"> Cash</label>
+        </div>
+        <label>Saved payment method<select name="method"><option>Visa ending 4421</option><option>UPI: customer@upi</option><option>Pay at delivery</option></select></label>
+        <label>Packaging preference<select name="packaging"><option>Standard sealed packaging</option><option>Eco-friendly packaging</option><option>Extra cutlery and napkins</option></select></label>
+        <div class="totals" id="cartTotals"></div>
+        <button type="submit">Place order</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
